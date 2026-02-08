@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+.env
+cookies.json
+*.tmp
+.DS_Store
+Thumbs.db
