@@ -2,24 +2,36 @@
 
 # awe-gemini-web
 
-**Unofficial TypeScript client for Google Gemini's web interface**
+**Programmatic access to Gemini's native image generation (Nano Banana) via its web interface**
 
-文本生成 &bull; 图片生成 &bull; 图片理解 &bull; 多轮对话
+通过 Gemini Web 接口调用 Nano Banana 原生生图能力的 CLI 工具
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Bun](https://img.shields.io/badge/Bun-runtime-f472b6?logo=bun&logoColor=white)](https://bun.sh/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**[English](#features)** | **[中文](#功能特性)**
+**[English](#about)** | **[中文](#关于)**
 
 </div>
 
 ---
 
+## About
+
+Google Gemini has a powerful native image generation model internally known as **Nano Banana**. However, this capability is only available through the [Gemini web UI](https://gemini.google.com/) — there is no official API for it.
+
+This project bridges that gap. It reverse-engineers the Gemini web interface, letting you call Nano Banana's image generation (and Gemini's text generation) **programmatically from the command line**. Think of it as giving your scripts and AI agents direct access to the same image generation you'd get by chatting with Gemini in your browser.
+
+## 关于
+
+Google Gemini 内置了一个强大的原生生图模型，内部代号 **Nano Banana**。但这个能力只能通过 [Gemini 网页端](https://gemini.google.com/) 使用——Google 并没有为它提供官方 API。
+
+本项目就是为了解决这个问题。它通过逆向 Gemini 的 Web 接口，让你可以**在命令行中直接调用 Nano Banana 的生图能力**（以及 Gemini 的文本生成）。简单来说：你在浏览器里跟 Gemini 聊天能生成的图，现在脚本和 AI Agent 也能直接生成了。
+
 > [!WARNING]
 > This project uses a **reverse-engineered** Gemini Web API, not an official Google API. It may break without notice if Google changes their internal endpoints. Use at your own risk.
 >
-> 本项目使用的是**逆向工程**的 Gemini Web API，并非 Google 官方 API。如果 Google 修改了内部接口，本项目可能会随时失效。使用风险自负。
+> 本项目使用**逆向工程**的 Gemini Web API，并非 Google 官方 API。如果 Google 修改了内部接口，可能随时失效。使用风险自负。
 
 ## Features
 
